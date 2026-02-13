@@ -45,7 +45,7 @@ public class Steps {
     @Before
     public void setUp() {
         try {
-            System.out.println("isAndroid:" + TestiniumEnvironment.isPlatformAndroid());
+            System.out.println("isAndroid:" + TestiniumEnvironment.isNOTPlatformAndroid());
             if(DeviceAndroid || TestiniumEnvironment.isPlatformAndroid()){
                 DesiredCapabilities overridden = new DesiredCapabilities();
                 overridden.setCapability(PLATFORM_NAME, Platform.ANDROID);
